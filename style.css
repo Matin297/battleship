@@ -1,0 +1,62 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+form {
+  position: fixed;
+  bottom: 10px;
+  right: 0;
+  padding: 15px;
+  background-color: rgb(83, 175, 19);
+}
+
+form input,
+form button {
+  background-color: rgb(152, 207, 113);
+  border-color: rgb(83, 175, 19);
+  font-size: 1em;
+}
+
+#notif {
+  color: rgb(83, 175, 19);
+  position: fixed;
+  top: 10px;
+  left: 0;
+}
+
+#board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#v-board {
+  position: absolute;
+  width: 675px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cell {
+  width: 96px;
+  height: 96px;
+}
+
+.hit {
+  background: url("./ship.png") no-repeat center center;
+}
+
+.miss {
+  background: url("./miss.png") no-repeat center center;
+}
